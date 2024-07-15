@@ -7,6 +7,17 @@
 
 body {
     overflow: hidden;
+    font: var(--text);
+    color: var(--text-secondary);
+}
+
+h1, h2 {
+    color: var(--text-primary);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Variáveis */
@@ -54,7 +65,7 @@ body {
 
 /* tipografia */
 
-    --font-family: "Poppins", "sans-serif"
+    --font-family: "Poppins", "sans-serif";
     --h1: 700 32px/120% var(--font-family);
     --h2: 700 24px/120% var(--font-family);
     --h3: 700 20px/120% var(--font-family);
