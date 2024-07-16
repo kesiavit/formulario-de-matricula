@@ -1,3 +1,5 @@
+@import url(droparea.css);
+
 input, textarea, select {
     appearance: none;
     width: 100%;
@@ -12,7 +14,7 @@ input, textarea, select {
 input[type="date"] {
     position: relative;
 
-    &::-webkit-calendar-picker-indicador {
+&::-webkit-calendar-picker-indicador {
         display: none;
         position: absolute;
         background: url(../../assets/icones/calendar.svg);
@@ -27,7 +29,7 @@ label {
     margin-bottom: .25rem;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus, select:focus, textarea:focus, input[type="date"]:focus-within {
     border: .125rem solid var(--stroke-highlight);
     outline: .25rem solid var(--surface-secondary);
     outline-offset: .1px;
